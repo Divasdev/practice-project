@@ -1,45 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>FastDrop</title>
-   <link rel="stylesheet" href="style.css">
-</head>
+   <title>FastDrop - Help Center</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
 
+      body {
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+         line-height: 1.6;
+      }
+
+      /* Header */
+      .top-header {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 1rem 3rem;
+         background: #fff;
+         border-bottom: 1px solid #e5e5e5;
+      }
+
+      .left-header {
+         display: flex;
+         align-items: center;
+         gap: 0.5rem;
+         font-size: 0.95rem;
+      }
+
+      .fastdrop-logo {
+         font-weight: 600;
+         color: #000;
+      }
+
+      .help {
+         color: #666;
+      }
+
+      .right-header {
+         display: flex;
+         gap: 1rem;
+      }
+
+      .btn-request, .btn-signin {
+         padding: 0.5rem 1.25rem;
+         border-radius: 6px;
+         border: 1px solid #ddd;
+         background: #fff;
+         cursor: pointer;
+         font-size: 0.9rem;
+         transition: all 0.2s;
+      }
+
+      .btn-signin {
+         background: #3b82f6;
+         color: white;
+         border-color: #3b82f6;
+      }
+
+      .btn-request:hover {
+         background: #f5f5f5;
+      }
+
+      .btn-signin:hover {
+         background: #2563eb;
+      }
+
+      /* Hero Section */
+      .hero-section {
+         background: linear-gradient(135deg, #e0e7ff 0%, #ddd6fe 100%);
+         padding: 4rem 2rem;
+         text-align: center;
+      }
+
+      .big-tag {
+         font-size: 2.5rem;
+         font-weight: 600;
+         margin-bottom: 2rem;
+         color: #1f2937;
+      }
+
+      .input-wrapper {
+         position: relative;
+         max-width: 500px;
+         margin: 0 auto;
+      }
+
+      .section-input {
+         width: 100%;
+         padding: 0.875rem 3rem 0.875rem 1rem;
+         border: 1px solid #d1d5db;
+         border-radius: 8px;
+         font-size: 1rem;
+         background: white;
+      }
+
+      .section-input:focus {
+         outline: none;
+         border-color: #3b82f6;
+      }
+
+      .arrow {
+         position: absolute;
+         right: 1rem;
+         top: 50%;
+         transform: translateY(-50%);
+         font-size: 1.25rem;
+         color: #666;
+         cursor: pointer;
+      }
+
+      /* Features Grid Section */
+      .features-section {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 2rem;
+         padding: 3rem;
+         max-width: 1200px;
+         margin: 0 auto;
+      }
+
+      .feature-card {
+         display: flex;
+         gap: 1.5rem;
+         padding: 1.5rem;
+         background: #fff;
+      }
+
+      .feature-icon {
+         font-size: 2.5rem;
+         flex-shrink: 0;
+      }
+
+      .feature-content h3 {
+         font-size: 1.1rem;
+         margin-bottom: 0.75rem;
+         color: #1f2937;
+      }
+
+      .feature-content p {
+         color: #6b7280;
+         font-size: 0.95rem;
+         line-height: 1.6;
+         margin-bottom: 1rem;
+      }
+
+      .learnmore {
+         color: #6366f1;
+         text-decoration: none;
+         font-size: 0.9rem;
+         font-weight: 500;
+         display: inline-flex;
+         align-items: center;
+         gap: 0.25rem;
+      }
+
+      .learnmore:hover {
+         color: #4f46e5;
+         text-decoration: underline;
+      }
+
+      .learn-arrow {
+         font-size: 1rem;
+      }
+
+      /* Footer */
+      .footer {
+         background: #111;
+         color: #fff;
+         padding: 3rem;
+         margin-top: 3rem;
+      }
+
+      .footer-content {
+         display: flex;
+         justify-content: space-around;
+         max-width: 1200px;
+         margin: 0 auto;
+      }
+
+      .footer-column h4 {
+         margin-bottom: 1rem;
+         font-size: 0.95rem;
+      }
+
+      .footer-column ul {
+         list-style: none;
+      }
+
+      .footer-column li {
+         margin-bottom: 0.5rem;
+         font-size: 0.85rem;
+         color: #9ca3af;
+      }
+
+      .footer-column a {
+         color: #9ca3af;
+         text-decoration: none;
+      }
+
+      .footer-column a:hover {
+         color: #fff;
+      }
+   </style>
+</head>
 <body>
+   <!-- Header -->
    <header class="top-header">
       <div class="left-header">
-
-         <!---LOGO-->
          <p class="fastdrop-logo">FastDrop |</p>
-         <p class="help"> Help Center</p>
-
-
+         <p class="help">Help Center</p>
       </div>
-
       <div class="right-header">
-
-         <button class="btn-request">Submit a request </button>
-         <button class="btn-signin">Sign in </button>
-
-
+         <button class="btn-request">Submit a request</button>
+         <button class="btn-signin">Sign in</button>
       </div>
-
    </header>
 
-   <div class="container">
-   <section class="below-header"> 
-      <h1 class="big-tag">How can we help ?</h1>
+   <!-- Hero Section -->
+   <section class="hero-section">
+      <h1 class="big-tag">How can we help?</h1>
       <div class="input-wrapper">
          <input type="text" placeholder="Search" class="section-input">
          <span class="arrow">➜</span>
       </div>
-      <p></p>
    </section>
 
-   </div>
-</body>
+   <!-- Features Grid -->
+   <div class="features-section">
+      <!-- Branches Card -->
+      <div class="feature-card">
+         <div class="feature-icon">🌿</div>
+         <div class="feature-content">
+            <h3>Branches</h3>
+            <p>Abstract Branches lets you manage, version, and document your designs in one place.</p>
+            <a href="#" class="learnmore">Learn More <span class="learn-arrow">→</span></a>
+         </div>
+      </div>
 
+      <!-- Manage Account Card -->
+      <div class="feature-card">
+         <div class="feature-icon">👥</div>
+         <div class="feature-content">
+            <h3>Manage your account</h3>
+            <p>Configure your account settings, such as your email, profile details, and password.</p>
+            <a href="#" class="learnmore">Learn More <span class="learn-arrow">→</span></a>
+         </div>
+      </div>
+
+      <!-- Manage Organizations Card -->
+      <div class="feature-card">
+         <div class="feature-icon">📱</div>
+         <div class="feature-content">
+            <h3>Manage organizations, teams, and projects</h3>
+            <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
+            <a href="#" class="learnmore">Learn More <span class="learn-arrow">→</span></a>
+         </div>
+      </div>
+
+      <!-- Manage Billing Card -->
+      <div class="feature-card">
+         <div class="feature-icon">💰</div>
+         <div class="feature-content">
+            <h3>Manage billing</h3>
+            <p>Change subscriptions and payment details.</p>
+            <a href="#" class="learnmore">Learn More <span class="learn-arrow">→</span></a>
+         </div>
+      </div>
+
+      <!-- Authenticate Card -->
+      <div class="feature-card">
+         <div class="feature-icon">🔑</div>
+         <div class="feature-content">
+            <h3>Authenticate to Abstract</h3>
+            <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning.</p>
+            <a href="#" class="learnmore">Learn More <span class="learn-arrow">→</span></a>
+         </div>
+      </div>
+
+      <!-- Abstract Support Card -->
+      <div class="feature-card">
+         <div class="feature-icon">💬</div>
+         <div class="feature-content">
+            <h3>Abstract support</h3>
+            <p>Get in touch with a human.</p>
+            <a href="#" class="learnmore">Learn More <span class="learn-arrow">→</span></a>
+         </div>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="footer-content">
+         <div class="footer-column">
+            <h4>Abstract</h4>
+            <ul>
+               <li><a href="#">Branches</a></li>
+            </ul>
+         </div>
+         <div class="footer-column">
+            <h4>Resources</h4>
+            <ul>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Help Center</a></li>
+               <li><a href="#">Release Notes</a></li>
+               <li><a href="#">Status</a></li>
+            </ul>
+         </div>
+         <div class="footer-column">
+            <h4>Community</h4>
+            <ul>
+               <li><a href="#">Twitter</a></li>
+               <li><a href="#">LinkedIn</a></li>
+               <li><a href="#">Facebook</a></li>
+               <li><a href="#">Dribbble</a></li>
+               <li><a href="#">Podcast</a></li>
+            </ul>
+         </div>
+         <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Careers</a></li>
+               <li><a href="#">Legal</a></li>
+               <li><a href="#">Contact Us</a></li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+</body>
 </html>

@@ -109,3 +109,55 @@ body {
    position: relative;
    display: inline-block;
 }
+.left-section{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+}
+.left-1{
+   width: 300px;
+   height:auto;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-direction: column;
+   margin-left: 80px;
+   padding: 30px;
+   margin-bottom:0;
+
+}
+.left-2{
+   width: 300px;
+
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-direction: column;
+   margin-left: 90px;
+   padding: 10px;
+
+}
+.left-3{
+
+   width: 300px;
+
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-direction: column;
+   margin-left: 90px;
+   padding: 10px;
+}
+
+
+.right-section{
+ display: flex;
+   width: 300px;
+   background-color: grey;
+   height: auto;
+   flex-direction: row-reverse;
+   justify-content: flex-end;
+   align-items: flex-start; /* moves it to the top */
+   margin-bottom: 20px; /* optional spacing */
+}

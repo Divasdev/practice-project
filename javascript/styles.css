@@ -1,0 +1,28 @@
+#btn-decrease{
+justify-content: center;
+display: flex;
+align-items: center;
+}
+.btn-container{
+text-align: center;
+
+}
+
+#counter{
+   font-size: 10em;
+   display: block;
+   text-align: center;
+   font-family: Arial;
+}
+.btns{
+   background-color:antiquewhite;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.25s;
+   border: none;
+   padding: 10px;
+
+}
+.btns:hover{
+   background-color: beige;
+}

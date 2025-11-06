@@ -17,7 +17,7 @@ function(){
    console.log(username);
 } ;*/
 
-const decreaseBtn=document.getElementById("btn-dec");
+/*const decreaseBtn=document.getElementById("btn-dec");
 const resetBtn=document.getElementById("btn-reset");
 const increaseBtn=document.getElementById("btn-inc");
 const  counterNum=document.getElementById("counter");
@@ -36,7 +36,9 @@ decreaseBtn.onclick=function(){
 resetBtn.onclick=function(){
    count=0
    counterNum.textContent= count;
-}
+}*/
+
+ 
 
 
 

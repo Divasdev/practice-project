@@ -38,9 +38,36 @@ resetBtn.onclick=function(){
    counterNum.textContent= count;
 }*/
 
+
  
+const subsCheckbox=document.getElementById("subs-checkbox");
+const VisaCheckbox=document.getElementById("Visa-checkbox");
+const rupayCheckbox=document.getElementById("rupay-checkbox");
+const masterCheckbox=document.getElementById("master-checkbox");
+const submitButton=document.getElementById("submitButton");
+const resultPara=document.getElementById("subsResult");
+const payResult=document.getElementById("payResult");
 
 
+submitButton.onclick = function(){
 
+   if (subsCheckbox.checked){
+       resultPara.textContent =`You are subscribed `;
+   }
+   else{
+      resultPara.textContent=`You aren't subscribed`;
+   }
 
+   if(VisaCheckbox.checked){
+      payResult.textContent="you are paying with visa";
 
+   }
+   else if(masterCheckbox.checked){
+      payResult.textContent="you are paying with mastercard";
+   }
+   else if(rupayCheckbox.checked){
+      payResult.textContent="You are paying with Rupay";
+   } else{
+      payResult.textContent="You must select a payment type";
+   }
+};

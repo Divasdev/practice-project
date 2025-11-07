@@ -39,7 +39,9 @@ resetBtn.onclick=function(){
 }*/
 
 
- 
+ /*
+
+ CHECKED PROPERTY IN JAVASCRIPT
 const subsCheckbox=document.getElementById("subs-checkbox");
 const VisaCheckbox=document.getElementById("Visa-checkbox");
 const rupayCheckbox=document.getElementById("rupay-checkbox");
@@ -70,4 +72,52 @@ submitButton.onclick = function(){
    } else{
       payResult.textContent="You must select a payment type";
    }
-};
+};*/
+
+/*
+TERNARY OPERATOR
+let purchaseAmount= 4000
+let marketOffers= purchaseAmount>5000 ?"You are eligble for an extra 20% discount!!" :"You should buy more stuffs to avail the dicount";
+
+alert(marketOffers);
+*/
+
+/*
+SWICH
+let purchasebatteryHealth=100;
+let degradedbatteryHealth=80
+switch(true){
+
+   case degradedbatteryHealth<=80:
+    letter='B';
+      break; 
+   case purchasebatteryHealth<=100:
+   letter='A';
+      break;
+}
+
+console.log(letter);
+
+*/
+   // STRING SLICING
+
+/*const fullName="Divas";
+let firstName= fullName.slice(0,2);
+let lastName = fullName.slice(3,5);
+console.log(firstName)
+console.log(lastName);*/
+
+
+
+//let fileName= "projects.js";
+//let ext=fileName.slice(-2);
+//console.log(ext);//
+
+let username ="";
+
+while(username=== ""){
+   console.log("You didn't enter your name");
+
+}
+
+

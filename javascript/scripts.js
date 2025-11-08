@@ -119,7 +119,9 @@ while(username=== ""){
    console.log("You didn't enter your name");
 
 }*/
+/*
 
+TEMPERATURE CONVERTER
 const textBox=document.getElementById("temp-input");
 const celtofah=document.getElementById("c-to-f");
 const fahtocel=document.getElementById("f-to-c");
@@ -149,7 +151,7 @@ function tempConvert(){
 
     }
 
-}
+}*/
 
 
 

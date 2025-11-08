@@ -113,11 +113,43 @@ console.log(lastName);*/
 //let ext=fileName.slice(-2);
 //console.log(ext);//
 
-let username ="";
+/*let username ="";
 
 while(username=== ""){
    console.log("You didn't enter your name");
 
+}*/
+
+const textBox=document.getElementById("temp-input");
+const celtofah=document.getElementById("c-to-f");
+const fahtocel=document.getElementById("f-to-c");
+const result=document.getElementById("temp-result");
+
+document.getElementById("convert-btn").onclick = tempConvert;
+
+
+let temp;
+
+
+function tempConvert(){
+    if (celtofah.checked){
+      temp = Number(textBox.value);
+      temp = (temp*9/5)+32;
+      result.textContent =temp.toFixed(2) + '°F';
+
+    } else if (fahtocel.checked){
+      temp = Number(textBox.value);
+      temp = (temp-32) * 5/9;
+      result.textContent = temp.toFixed(1) +'°C';
+
+      
+    } else {
+
+   result.textContent ="Select a Unit to convert ";
+
+    }
+
 }
+
 
 

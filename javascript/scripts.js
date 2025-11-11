@@ -187,7 +187,35 @@ function computerMoves(){
    compDiceimage.src= `../Dice-Images/Dice-${randomNum}.svg.png`;
 
 }*/
+/*
+FOR EACH
+let number = [1,2,3,4,5];
 
+number.forEach(display);
+number.forEach(double);
+function double(element,index,array){
+   array[index]=element*3
+  
+}
+
+
+function display(element){
+    
+console.log(element);
+}
+*/
+
+
+const myfav=["apple","goggle",'meta',"nvidia","openAi"];
+const fav=myfav.map(companies);
+console.log(fav);
+function companies(elements){
+  return elements.toUpperCase();
+};
+fav.forEach(display);
+function display (elements){
+   console.log(elements);
+}
 
 
 

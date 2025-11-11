@@ -153,7 +153,46 @@ function tempConvert(){
 
 }*/
 
- 
+
+/*
+DICE  ROLLER GAME
+ const inputBox=document.getElementById('user-input');
+ const submitBtn=document.getElementById('submit-btn');
+ const userMove=document.getElementById("user-move");
+ const compMove=document.getElementById('computer-move');
+ const compDiceimage =document.getElementById("dice-image");
+
+
+document.getElementById('submit-btn').onclick =
+function subBtn(){
+    const input = Number(inputBox.value);
+
+    if( isNaN(input)){
+     userMove.textContent= "Enter a valid number";
+    }
+     else if ( input >= 1 && input <=6){
+      userMove.textContent = `Your's Move: ${input}`;
+      computerMoves();
+    }
+    else{
+       userMove.textContent = `Enter a number between 1 and 6`;
+    }
+
+
+}
+function computerMoves(){
+   const randomNum = Math.floor(Math.random()* 6 +1);
+   console.log(randomNum);
+   compMove.textContent = `computer's Move:${randomNum}`;
+   compDiceimage.src= `../Dice-Images/Dice-${randomNum}.svg.png`;
+
+}*/
+
+
+
+
+
+
 
 
 

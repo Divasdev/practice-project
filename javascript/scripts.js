@@ -376,3 +376,63 @@ user1.sayHello();
 
 console.log(user1.userName);
 userInfo.getUsercount();*/
+
+/*
+
+INHERITANCE IN JAVASCRIPT
+// parent property
+class wildAnimal {
+   tiger(){
+      console.log(` The jungle has ${this.name}`)
+   }
+   elephant(){
+      console.log(`The jungle has ${this.name}`);
+
+   }
+}
+
+// child property
+
+class tiger extends wildAnimal{
+   name="Bengal tiger";
+   eat(){
+      console.log(`The ${this.name} is eating.`);
+   }
+}
+
+const Tiger =new tiger();
+
+console.log(Tiger);
+Tiger.eat();*/
+
+
+class Parent {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet() {
+    console.log(`Hello, I am ${this.name}`);
+  }
+}
+
+class Child extends Parent {
+  constructor(name, age) {
+    super(name);   // the knock → lets you access 'this'
+    this.age = age;
+  }
+
+  show() {
+    console.log(`${this.name} is ${this.age} years old`);
+  }
+}
+
+const kid = new Child("Divas", 19);
+kid.greet();
+kid.show();
+
+
+
+
+
+

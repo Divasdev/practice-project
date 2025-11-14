@@ -405,7 +405,8 @@ const Tiger =new tiger();
 console.log(Tiger);
 Tiger.eat();*/
 
-
+/*
+SUPER KEYWORD IN JAVASCRIPT 
 class Parent {
   constructor(name) {
     this.name = name;
@@ -430,9 +431,94 @@ class Child extends Parent {
 const kid = new Child("Divas", 19);
 kid.greet();
 kid.show();
+*/
+
+
+/*
+GETTERS AND SETTERS IN JAVASCRIPT 
+
+class Rectangle{
+   constructor(width,height) {
+      this.width=width;
+      this.height=height;
+   }
+   areaRect(){
+      return this.width*this.height;
+   }
+   set width(newWidth){
+       if (newWidth>0){
+           this._width =newWidth;
+       }
+       else{
+         console.error("Width must be number");
+       }
+   }
+   set height(newHeight){
+       if (newHeight>0){
+           this._height =newHeight;
+       }
+       else{
+         console.error("Height  must be  positive number");
+       }
+   }
+
+   get width (){
+      return this._width;
+   }
+   get height (){
+      return this._height;
+   }
+
+
+   get periRect(){
+      return 2*(this._height*this._width);
+   }
+}
+const rectangle = new Rectangle(35,45);
+
+
+console.log(rectangle.areaRect());
+console.log(rectangle.periRect);
 
 
 
 
+class person {
+   constructor(firstName,lastName){
+      this.firstName=firstName;
+      this.lastName=lastName;
+   }
+   set firstName(newFirstname){
+      if(typeof newFirstname ==='string'){
+         this._firstName= newFirstname;
+      }
+      else{
+         console.error("Name should be a string");
+      }
 
+   }
+
+    set lastName(newLastname){
+      if(typeof newLastname ==='string'){
+         this._lastName= newLastname;
+      }
+      else{
+         console.error("Name should be a string");
+      }
+   }
+   get firstName(){
+      return this._firstName;
+   }
+   get lastName(){
+      return this._lastName;
+   }
+   
+}
+ const Person = new person("Divas","Sharma");
+
+console.log(Person.firstName);
+console.log(Person.lastName);
+
+
+*/
 

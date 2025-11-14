@@ -293,6 +293,59 @@ Car1.drive();
 Car2.drive();
 */
 
+/*
+
+CLASSES JAVASCRIPT
+
+class Products{
+   constructor(name,price){
+      this.name =name;
+      this.price=price;   
+   
+   }
+
+   displayProduct(){
+      console.log(`product:${this.name}`);
+      console.log(`price:₹${this.price}`);
+   }
+   calcTotal(salesTax){
+      return this.price+(this.price * salesTax);
+   }
+}
+
+const salesTax=0.067;
+const prod1=new Products("shirt",163);
+const prod2=new Products("pant",450);
+const total1 = prod1.calcTotal(salesTax);
+const total2 = prod2.calcTotal(salesTax);
+
+
+
+prod1.displayProduct();
+console.log(`The sales tax is:₹${total1} `);
+prod2.displayProduct();
+console.log(`The sales tax is:₹${total2} `);
+
+*/
+
+/*
+STATIC KEYWORD
+
+class Mathutil{
+   static PI =3.25284;
+  static getDiameter(radius){
+       return radius*2;
+  }
+  static getArea(radius){
+   return Mathutil.PI * radius ** 2;
+  }
+  sayHello(){
+   console.log(`Hello,${this.userName}`);
+  }
+
+}
+console.log(Mathutil.getDiameter(80));
+console.log(Mathutil.getArea(10000000));
 
 
 
@@ -300,3 +353,26 @@ Car2.drive();
 
 
 
+
+
+
+class userInfo{
+   static userCount=0;
+   constructor(userName){
+      this.userName=userName;
+      userInfo.userCount++;
+   }
+   static getUsercount(){
+      console.log(`usersonline:${userInfo.userCount}`);
+   }
+     sayHello(){
+   console.log(`Hello,${this.userName}`);
+  }
+
+}
+
+const user1 = new userInfo("Divas Sharma");
+user1.sayHello();
+
+console.log(user1.userName);
+userInfo.getUsercount();*/

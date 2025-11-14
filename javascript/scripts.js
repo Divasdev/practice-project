@@ -205,7 +205,9 @@ console.log(element);
 }
 */
 
+/*
 
+MAP() METHOD 
 const myfav=["apple","goggle",'meta',"nvidia","openAi"];
 const fav=myfav.map(companies);
 console.log(fav);
@@ -216,6 +218,43 @@ fav.forEach(display);
 function display (elements){
    console.log(elements);
 }
+*/
+/*
+FILTER() METHOD
+let number=[1,2,3,4,5,6,7,8,9];
+let even =number.filter(evenNum);
+function evenNum(elements){
+   return elements % 2 ===0 ;
+}
+console.log(even);
+*/
+
+/*
+REDUCE()METHOD 
+const prices=[100,200,300,400,500];
+const total= prices.reduce(sum);
+console.log(total);
+function sum(accumulator,element){
+   return accumulator+element;
+}
+   */
+  /*
+  ARROW FUNCTIONS 
+ const arrow = ((name,lastName )=>{
+console.log(`${name}`);
+console.log(lastName);
+});
+
+arrow("divas");
+arrow("sharma")
+*/
+
+
+
+
+
+
+
 
 
 

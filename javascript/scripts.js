@@ -248,13 +248,50 @@ console.log(lastName);
 arrow("divas");
 arrow("sharma")
 */
+/*
+JAVASCRIPTS OBJECTS
+const divasInfo={
+   firstName:"Divas",
+   age: "20",
+   lastName:"sharma",
+   address:"kanglatongbi",
+   course:"IITM BS Data Science"
+}
+ console.log(divasInfo.firstName);
+console.log(divasInfo.lastName);
+*/
 
+/*
+THIS KEYWORD IN JAVASCRIPT
+const divasInfo={
+   firstName:"Divas",
+   age: "20",
+   lastName:"sharma",
+   address:"kanglatongbi",
+   course:"IITM BS Data Science",
+   foodName:"paneer",
+   favFood: function(){console.log( `${this.firstName} fav food is ${this.foodName}`)}
+};
 
+divasInfo.favFood();
+*/
 
+/*CONSTRUCTOR FUNCTION IN JAVASCRIPT
+function Car(name,model,color){
+   this.name= name,
+   this.model =model,
+   this.color=color
+   this.drive=function(){console.log(`you drive ${this.name}`)}
 
+}
 
-
-
+const Car1=new Car("porshe","911 GT3","black");
+const Car2=new Car("BMW","M4","black");
+console.log(Car1);
+console.log(Car2);
+Car1.drive();
+Car2.drive();
+*/
 
 
 

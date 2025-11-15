@@ -39,9 +39,9 @@ resetBtn.onclick=function(){
 }*/
 
 
- /*
+/*
 
- CHECKED PROPERTY IN JAVASCRIPT
+CHECKED PROPERTY IN JAVASCRIPT
 const subsCheckbox=document.getElementById("subs-checkbox");
 const VisaCheckbox=document.getElementById("Visa-checkbox");
 const rupayCheckbox=document.getElementById("rupay-checkbox");
@@ -53,25 +53,25 @@ const payResult=document.getElementById("payResult");
 
 submitButton.onclick = function(){
 
-   if (subsCheckbox.checked){
-       resultPara.textContent =`You are subscribed `;
-   }
-   else{
-      resultPara.textContent=`You aren't subscribed`;
-   }
+  if (subsCheckbox.checked){
+      resultPara.textContent =`You are subscribed `;
+  }
+  else{
+     resultPara.textContent=`You aren't subscribed`;
+  }
 
-   if(VisaCheckbox.checked){
-      payResult.textContent="you are paying with visa";
+  if(VisaCheckbox.checked){
+     payResult.textContent="you are paying with visa";
 
-   }
-   else if(masterCheckbox.checked){
-      payResult.textContent="you are paying with mastercard";
-   }
-   else if(rupayCheckbox.checked){
-      payResult.textContent="You are paying with Rupay";
-   } else{
-      payResult.textContent="You must select a payment type";
-   }
+  }
+  else if(masterCheckbox.checked){
+     payResult.textContent="you are paying with mastercard";
+  }
+  else if(rupayCheckbox.checked){
+     payResult.textContent="You are paying with Rupay";
+  } else{
+     payResult.textContent="You must select a payment type";
+  }
 };*/
 
 /*
@@ -99,7 +99,7 @@ switch(true){
 console.log(letter);
 
 */
-   // STRING SLICING
+// STRING SLICING
 
 /*const fullName="Divas";
 let firstName= fullName.slice(0,2);
@@ -238,9 +238,9 @@ function sum(accumulator,element){
    return accumulator+element;
 }
    */
-  /*
-  ARROW FUNCTIONS 
- const arrow = ((name,lastName )=>{
+/*
+ARROW FUNCTIONS 
+const arrow = ((name,lastName )=>{
 console.log(`${name}`);
 console.log(lastName);
 });
@@ -521,6 +521,64 @@ console.log(Person.lastName);
 
 
 */
+
+let a = 1;
+let b = 2;
+[a, b] = [b, a];
+console.log(a);
+console.log(b);
+
+
+
+
+
+const fruits = ['apple', 'banana', 'orange','kiwi'];
+[fruits[0], fruits[2]] = [fruits[2], fruits[0]];
+console.log(fruits);
+
+
+
+
+
+
+
+//-------------------------------------
+const [firstFruit, middleFruit, lastFruit ,...extraFruits] = fruits;
+console.log(firstFruit);
+console.log(middleFruit);
+console.log(lastFruit);
+console.log(extraFruits);
+
+
+
+
+function displayPerson({ firstName,lastName,age,job }){
+
+   console.log(`name: ${firstName}`);
+   console.log(`age ${lastName}`);
+}
+const person1={
+     firstName:"Divas",
+     lastName:"Sharma",
+     age:20,
+     job:"AI engineer"
+};
+const person2={
+     firstName:"Patrick",
+     lastName:"Trump",
+     age:30
+};
+const {firstName,lastName,age,job ="Data Scientist"} =person2;
+console.log(firstName);
+console.log(lastName);
+console.log(age);
+console.log(job);
+
+
+displayPerson(person1);
+
+
+
 
 
 

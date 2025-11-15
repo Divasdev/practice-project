@@ -733,7 +733,7 @@ num.sort((a,b) => b-a);
 
 */
 
-
+/*
 SUFFLE AN ARRAY IN JAVASCRIPT
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -746,8 +746,11 @@ function shuffle(array) {
 const arr = [1, 2, 3, 4, 5, 6];
 console.log(shuffle(arr));
 
+*/
 
 
+
+console.log(Date());
 
 
 

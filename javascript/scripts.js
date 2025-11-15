@@ -657,7 +657,7 @@ console.log(p3);
 */
 
 
-
+/*
 // Array of objects with nested objects
 const students = [
   {
@@ -706,9 +706,37 @@ console.log("High math students:", highMath);
 const totalMath = students.reduce((sum, s) => sum + s.scores.math, 0);
 console.log("Total math score:", totalMath);
 
+*/
 
 
 
+
+
+
+/*
+SORT METHOD IN JAVASCRIPT 
+
+
+const fruits = [
+  { name: "Apple", color: "Red", price: 120 },
+  { name: "Banana", color: "Yellow", price: 40 },
+  { name: "Orange", color: "Orange", price: 90 },
+  { name: "Kiwi", color: "Green", price: 150 }
+];
+
+fruits.sort((a,b) => b.name.localeCompare (a.name));
+console.log(fruits);
+
+
+const num=[1,2,5,4,8,0]
+
+
+
+num.sort((a,b) => b-a);
+//console.log(num);
+
+
+*/
 
 
 

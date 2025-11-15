@@ -657,3 +657,62 @@ console.log(p3);
 */
 
 
+
+// Array of objects with nested objects
+const students = [
+  {
+    name: "Divas",
+    age: 20,
+    scores: { math: 88, physics: 92 }
+  },
+  {
+    name: "Asha",
+    age: 19,
+    scores: { math: 75, physics: 81 }
+  }
+];
+
+// 1. push() → add a new student
+students.push({
+  name: "Rohan",
+  age: 21,
+  scores: { math: 93, physics: 89 }
+});
+
+// 2. pop() → remove last object
+const removedStudent = students.pop();
+
+// 3. splice() → insert object at index 1
+students.splice(1, 0, {
+  name: "Meera",
+  age: 22,
+  scores: { math: 67, physics: 78 }
+});
+
+// 4. forEach() → print all names
+students.forEach(s => {
+  console.log(`Name: ${s.name}, Math: ${s.scores.math}`);
+});
+
+// 5. map() → make an array of physics scores only
+const physicsScores = students.map(s => s.scores.physics);
+console.log("Physics scores:", physicsScores);
+
+// 6. filter() → students with math score > 80
+const highMath = students.filter(s => s.scores.math > 80);
+console.log("High math students:", highMath);
+
+// 7. reduce() → total math score of all students
+const totalMath = students.reduce((sum, s) => sum + s.scores.math, 0);
+console.log("Total math score:", totalMath);
+
+
+
+
+
+
+
+
+
+
+

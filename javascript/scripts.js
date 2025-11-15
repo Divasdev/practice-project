@@ -522,6 +522,10 @@ console.log(Person.lastName);
 
 */
 
+
+/*
+
+DESTRUCTURING IN JAVASCRIPT
 let a = 1;
 let b = 2;
 [a, b] = [b, a];
@@ -575,11 +579,81 @@ console.log(age);
 console.log(job);
 
 
+
 displayPerson(person1);
 
 
+*/
+
+
+/*
+NESTED OBJECTS IN JAVASCCRIPT
+
+
+const myInfo={
+    name : 'Divas Sharma',
+    age : 20,
+    address:{
+      lane:34,
+      street:"Mandir",
+      District:"Imphal west"
+    }
+}
+
+console.log(myInfo.address.lane);
+console.log(myInfo.address);
+
+
+for (const property in myInfo.address){
+   console.log(myInfo.address[property]);
+}
 
 
 
+
+
+class Person{
+     constructor( name,age,job,...address){
+      this.name=name;
+      this.age=age;
+      this.address= new Address(...address);
+     }
+
+
+}
+
+
+class Address{
+   constructor( street, city, state){
+      this.street=street;
+      this.city=city;
+      this.state=state;
+   }
+}
+
+
+
+const p1= new Person('a',30,"data scientist","mandir",
+                                            "imphal",
+                                            "India"
+);
+
+const p2= new Person('b',40," scientist","mandir",
+                                            "imphal",
+                                            "India"
+);
+
+const p3= new Person('c',50,"data engineer","mandir",
+                                            "imphal",
+                                            "India"
+);
+
+
+console.log(p1.address.state);
+console.log(p2);
+console.log(p3);
+
+
+*/
 
 

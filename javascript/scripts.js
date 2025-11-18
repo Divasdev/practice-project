@@ -748,10 +748,43 @@ console.log(shuffle(arr));
 
 */
 
+// CLOSURE IN JAVASCRIPT//
+
+function outer(){
 
 
-console.log(Date());
+   let message ="hello";
 
+
+   function inner(){
+      console.log(message);
+   }
+   inner();
+   message="Divas";
+}
+
+outer();
+
+
+
+function outer() {
+  let counter = 0;  // variable lives in outer's scope
+
+  function inner() {
+    counter++;            // still accessible
+    console.log(counter); // inner "remembers" counter
+  }
+
+  return inner; // return the function itself
+}
+
+const fun = outer();  // outer is done executing...
+fun();  // 1
+fun();  // 2
+fun();  // 3
+
+
+ 
 
 
 

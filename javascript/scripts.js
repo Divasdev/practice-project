@@ -842,6 +842,8 @@ updateClock();
 setInterval(updateClock, 1000);
 
 */
+
+/*
 const display = document.getElementById("display");
 let timer = null;
 let starttime = 0;
@@ -889,3 +891,6 @@ function reset() {
   elapsedtime = 0;
   display.textContent = "00:00:00:00";
 }
+  */
+
+

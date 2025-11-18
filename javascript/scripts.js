@@ -784,7 +784,24 @@ fun();  // 2
 fun();  // 3
 
 
- 
+
+ let score =0;
+
+ function increaseScore(points){
+   score+=points;
+   console.log(points);
+ }
+ function decreaseScore(points){
+   score -=points;
+   console.log(points)
+ }
+function getScore(){
+   return score;
+}
+
+increaseScore(5);
+decreaseScore(6);
 
 
+console.log(`final score is ${getScore} `);
 

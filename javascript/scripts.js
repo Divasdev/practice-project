@@ -805,7 +805,7 @@ decreaseScore(6);
 console.log(`final score is ${getScore} `);
 
 */
-
+/*
 
 let timeoutId;
 function startTimer(){
@@ -820,3 +820,25 @@ function endTimer(){
    console.log('clear');
 }
 
+*/
+
+/*
+function updateClock() {
+   const now = new Date();
+   let hours = now.getHours();
+   const meridian = hours >= 12 ? "PM" : 'AM';
+   hours = hours % 12 || 12;
+   hours = hours.toString().padStart(2, 0);
+
+   const mins = now.getMinutes().toString().padStart(2, 0);
+   const secs = now.getSeconds().toString().padStart(2, 0);
+
+   const timeString = `${hours}:${mins}:${secs}`;
+   document.getElementById("clock").textContent = timeString;
+}
+
+
+updateClock();
+setInterval(updateClock, 1000);
+
+*/

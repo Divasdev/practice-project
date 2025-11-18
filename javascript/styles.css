@@ -1,4 +1,4 @@
-#btn-decrease{
+/*#btn-decrease{
 justify-content: center;
 display: flex;
 align-items: center;
@@ -28,4 +28,30 @@ text-align: center;
 }
 .button-hover{
    
+}*/
+
+body{
+   background-image: url(premium_photo-1697729862026-8f486fcd7f8b.jpeg);
+   background-position: center;
+   background-repeat: no repeat;
+  background-size: cover;
+  background-attachment: fixed;
+   margin: 0;
+
+}
+
+#clock-container{
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+   display: flex;
+}
+
+#clock{
+   font-family: monospace;
+   font-size: 6.5rem;
+   font-weight: bold;
+   text-align: center;
+   backdrop-filter: blur(2px);
+   width: 100%;
 }

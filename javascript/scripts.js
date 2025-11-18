@@ -842,3 +842,50 @@ updateClock();
 setInterval(updateClock, 1000);
 
 */
+const display = document.getElementById("display");
+let timer = null;
+let starttime = 0;
+let elapsedtime = 0;
+let isrunning = false;
+
+function start() {
+  if (!isrunning) {
+    starttime = Date.now() - elapsedtime;
+    timer = setInterval(update, 10); // 10 ms = 0.01s
+    isrunning = true;
+  }
+  console.log(starttime);
+}
+
+function update() {
+  const currenttime = Date.now();
+  elapsedtime = currenttime - starttime;
+
+  let hours = Math.floor(elapsedtime / (1000 * 60 * 60));
+  let minutes = Math.floor(elapsedtime / (1000 * 60)) % 60;
+  let seconds = Math.floor(elapsedtime / 1000) % 60;
+  let miliseconds = Math.floor((elapsedtime % 1000) / 10);
+
+  // optional: zero padding
+  hours = hours.toString().padStart(2, "0");
+  minutes = minutes.toString().padStart(2, "0");
+  seconds = seconds.toString().padStart(2, "0");
+  miliseconds = miliseconds.toString().padStart(2, "0");
+
+  display.textContent = `${hours}:${minutes}:${seconds}:${miliseconds}`;
+}
+
+// optional: stop & reset bhi bana sakte ho
+function stop() {
+  if (isrunning) {
+    clearInterval(timer);
+    isrunning = false;
+  }
+}
+
+function reset() {
+  clearInterval(timer);
+  isrunning = false;
+  elapsedtime = 0;
+  display.textContent = "00:00:00:00";
+}

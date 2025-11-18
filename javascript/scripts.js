@@ -749,7 +749,7 @@ console.log(shuffle(arr));
 */
 
 // CLOSURE IN JAVASCRIPT//
-
+/*
 function outer(){
 
 
@@ -783,8 +783,7 @@ fun();  // 1
 fun();  // 2
 fun();  // 3
 
-
-
+function create Game
  let score =0;
 
  function increaseScore(points){
@@ -804,4 +803,20 @@ decreaseScore(6);
 
 
 console.log(`final score is ${getScore} `);
+
+*/
+
+
+let timeoutId;
+function startTimer(){
+  timeoutId= setTimeout(()=>{
+      alert('hello')
+   },3000);
+}
+
+
+function endTimer(){
+   clearTimeout(timeoutId);
+   console.log('clear');
+}
 

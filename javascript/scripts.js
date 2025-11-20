@@ -896,20 +896,49 @@ function reset() {
 
 
 //Dom Navigation
-
-
-
-
-
-
-
-
-
+/*
 const new1 =document.createElement("h1");
 
 newH1.textContent ="I like pizza";
 
 document.body.appendChild(append(new1));
+*/
+
+
+
+/*
+
+MOUSE RELATED EVENT IN JAVASCRIPT
+
+const mybox=document.getElementById("log-btn");
+
+
+
+mybox.addEventListener("click", 
+  (event)=>{
+       mybox.style.backgroundColor="orange";
+  event.target.textContent="Archita Sharma";
+   }
+);
+
+
+mybox.addEventListener("mouseover",event=>{
+    mybox.style.backgroundColor="orange";
+  event.target.textContent="Archita Sharma";
+});
+
+mybox.addEventListener("mouseout" ,event=>{
+
+       mybox.style.backgroundColor="blue";
+  event.target.textContent="Archita Sharma my babe";
+   }
+);
+
+*/
+
+
+
+
 
 
 

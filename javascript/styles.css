@@ -83,3 +83,13 @@ body{
    width: 300px;
 }
    */
+
+
+#log-btn{
+ 
+   background-color: red;
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   text-align: center;
+}

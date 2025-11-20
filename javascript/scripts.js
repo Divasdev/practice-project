@@ -895,7 +895,21 @@ function reset() {
 
 
 
+//Dom Navigation
 
+
+
+
+
+
+
+
+
+const new1 =document.createElement("h1");
+
+newH1.textContent ="I like pizza";
+
+document.body.appendChild(append(new1));
 
 
 

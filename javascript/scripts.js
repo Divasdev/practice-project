@@ -1003,6 +1003,29 @@ myButton.addEventListener("click",event=>{
 
 });
 
+*/
+
+/*
+
+CLASSLIST IN JAVASCRIPT
+const buttons = document.querySelectorAll(".btn");
+
+buttons.forEach(button => {
+  const boxId = button.dataset.box;
+  const targetBox = document.getElementById(boxId);
+
+  button.addEventListener("mouseover", () => {
+    targetBox.classList.add("highlight");
+  });
+
+  button.addEventListener("mouseout", () => {
+    targetBox.classList.remove("highlight");
+  });
+});
+
+*/
+
+
 
 
 

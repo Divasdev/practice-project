@@ -84,9 +84,26 @@ body{
 }
    */
 
+.container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
 
-#log-btn {
-  position: relative;  /* ya absolute / fixed */
-  top: 0px;
-  left: 0px;
+.boxes {
+  display: flex;
+  gap: 10px;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background: lightgray;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+
+.highlight {
+  background: gold;
+  transform: scale(1.1);
 }

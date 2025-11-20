@@ -939,7 +939,8 @@ mybox.addEventListener("mouseout" ,event=>{
 
 
 
-
+/*
+KEY EVENTS IN JAVASCRIPTS
 
 const mybox = document.getElementById("log-btn");
 const moveAmount = 10;
@@ -986,6 +987,21 @@ mybox.backgroundColor="lightblue";
 });
 
 
+*/
+
+/*
+HIDE OR SHOW IMAGE IN HTML USING JAVASCRIPT
+const myButton=document.getElementById("mybutton");
+const myImg=document.getElementById("click");
+
+
+
+
+myButton.addEventListener("click",event=>{
+   myImg.style.display ="none";
+    myImg.style.display ="show";
+
+});
 
 
 

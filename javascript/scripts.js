@@ -1233,7 +1233,8 @@ console.log(peson);
 
 
 
-
+/*
+FTECH DATA FROM API IN JAVASCRIPT
 fetchData();
 async function fetchData(){
   try{
@@ -1260,7 +1261,6 @@ async function fetchData(){
 
 
 
-/*
 fetch(" https://pokeapi.co/api/v2/pokemon/pikachu")
 .then(response =>response.json())
 .then(data => console.log(data))

@@ -1211,7 +1211,7 @@ dochores();
 */
 
 
-
+/*
 const names =["Divas","Tushar","Ashutosh","Lakshay","Dewash"]
 
 
@@ -1229,6 +1229,47 @@ console.log(names);
 
 const jsonString1 =JSON.stringify(peson);
 console.log(peson);
+*/
+
+
+
+
+fetchData();
+async function fetchData(){
+  try{
+
+   const pokemonName= document.getElementById("pokemon-name").value.toLowerCase();
+
+   const response=await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
+   if (!response.ok){
+
+      throw new error("couldn't fetch resource");
+   }
+   const data =await response.json();
+   const pokemonSprite=data.sprites.front_default;
+   const imgElemnet=document.getElementById("pokemonSprite");
+   imgElemnet.src =pokemonSprite;
+   imgElemnet.style.display="block";
+   
+  } 
+  catch (error)
+{
+   console.error(error);
+}
+}
+
+
+
+/*
+fetch(" https://pokeapi.co/api/v2/pokemon/pikachu")
+.then(response =>response.json())
+.then(data => console.log(data))
+.catch(error=>console.error(error));*/
+
+
+
+
+
 
 
 

@@ -1152,22 +1152,8 @@ walkDog()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*
+ASYNC AND WAIT 
 
 
 function walkDog(){
@@ -1203,6 +1189,7 @@ function takeOuttrash(){
 }
 
 async function dochores(){
+
    const walkDogresult = await walkDog();
    console.log(walkDogresult);
 
@@ -1221,9 +1208,27 @@ async function dochores(){
 
 dochores();
 
+*/
 
 
 
+const names =["Divas","Tushar","Ashutosh","Lakshay","Dewash"]
+
+
+const peson =
+{
+   "name":"Divas",
+   "age":20,
+   "college":"IIT MADRAS BS"
+}
+
+const jsonString =JSON.stringify(names);
+console.log(names);
+
+
+
+const jsonString1 =JSON.stringify(peson);
+console.log(peson);
 
 
 

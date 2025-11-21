@@ -1025,6 +1025,8 @@ buttons.forEach(button => {
 
 */
 
+/*
+IMAGE SLIDER IN JAVASCRIPT
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalId = null;
@@ -1067,6 +1069,31 @@ function nextSlide() {
 window.prevSlide = prevSlide;
 window.nextSlide = nextSlide;
 
+
+*/
+/*
+
+// A fake async function
+function doTask(name, time, callback) {
+    setTimeout(() => {
+        console.log(`Finished: ${name}`);
+        callback();
+    }, time);
+}
+
+console.log("Starting...");
+
+doTask("Step 1", 1000, () => {
+    doTask("Step 2", 1000, () => {
+        doTask("Step 3", 1000, () => {
+            doTask("Step 4", 1000, () => {
+                console.log("All steps done!");
+            });
+        });
+    });
+});
+
+*/
 
 
 

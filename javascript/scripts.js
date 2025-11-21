@@ -1072,7 +1072,7 @@ window.nextSlide = nextSlide;
 
 */
 /*
-
+//CALL BACK HELL IN JAVASCRIPT 
 // A fake async function
 function doTask(name, time, callback) {
     setTimeout(() => {
@@ -1092,8 +1092,66 @@ doTask("Step 1", 1000, () => {
         });
     });
 });
-
 */
+
+function walkDog(){
+ 
+   return new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+
+         
+       resolve("You walk the dog!");
+      
+      },2000);
+
+   });
+}
+function cleanKitchen(){
+
+   return new Promise((resolve, reject) => {
+         setTimeout(()=>{
+      resolve("You clean the Kitchen!");
+   },3000);
+   })
+}
+
+function takeOuttrash(){
+   return new Promise((resolve,reject)=>{
+   setTimeout(()=>{
+    resolve("You take out trash");
+     
+   },5000)
+
+   });
+
+}
+
+
+
+
+
+walkDog()
+  .then(value => {
+    console.log(value);
+    return cleanKitchen();
+  })
+  .then(value => {
+    console.log(value);
+    return takeOuttrash();
+  })
+  .then(value => {
+    console.log(value);
+    console.log("you finished all the chores.");
+  })
+  .catch(error => {
+    console.error("Kuch galat ho gaya:", error);
+  });
+
+
+
+
+
+
 
 
 

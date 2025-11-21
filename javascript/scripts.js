@@ -1093,13 +1093,13 @@ doTask("Step 1", 1000, () => {
     });
 });
 */
-
+/*
 function walkDog(){
  
    return new Promise((resolve,reject)=>{
       setTimeout(()=>{
 
-         
+
        resolve("You walk the dog!");
       
       },2000);
@@ -1146,6 +1146,87 @@ walkDog()
   .catch(error => {
     console.error("Kuch galat ho gaya:", error);
   });
+
+  
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function walkDog(){
+ 
+   return new Promise((resolve,reject)=>{
+      setTimeout(()=>{
+
+
+       resolve("You walk the dog!");
+      
+      },2000);
+
+   });
+}
+function cleanKitchen(){
+
+   return new Promise((resolve, reject) => {
+         setTimeout(()=>{
+      resolve("You clean the Kitchen!");
+   },3000);
+   })
+}
+
+function takeOuttrash(){
+   return new Promise((resolve,reject)=>{
+   setTimeout(()=>{
+    resolve("You take out trash");
+     
+   },5000)
+
+   });
+
+}
+
+async function dochores(){
+   const walkDogresult = await walkDog();
+   console.log(walkDogresult);
+
+   const cleanKitchenresult = await cleanKitchen();
+   console.log(cleanKitchenresult);
+
+   const takeOuttrashresult = await takeOuttrash();
+   console.log(takeOuttrashresult);
+
+   console.log("Task completed");
+
+
+
+}
+
+
+dochores();
+
+
+
+
+
+
+
 
 
 

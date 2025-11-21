@@ -117,5 +117,36 @@ body{
   
 }
 .silder img{
-   width: 100%;
+   width: 50%;
+   height: auto;
+   display: none;
+   margin: 0 auto;
+   object-fit: cover;
+}
+
+img.displaySlide{
+   display: block;
+
+
+}
+
+.silder button{
+   position: absolute;
+   top:50%;
+   transform: translateY(-50%);
+   font-size: 2rem;
+   background-color: aliceblue;
+   color:white;
+   border: none;
+   cursor: pointer;
+   padding:10px 15px;
+}
+
+.prev{
+   left: 0;
+}
+
+.next{
+   right:0;
+
 }
